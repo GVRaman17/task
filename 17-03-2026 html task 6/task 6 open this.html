@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blueviolet;
+            margin: 0;
+            padding: 20px;
+        }
+        #head {
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            color: red;
+            text-align: center;
+        }
+        #form-container {
+            background-color: white;
+            padding: 20px;
+            width:40%;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    <div id="head"class="font">
+        <h1>Sign Up Form</h1>
+    </div>
+    <div id="form-container" class="font">
+    <form action="welcome.html">
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Enter the user name" id="username" name="username" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter the email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter the password" id="password" name="password" required>
+        <br><br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" placeholder="Confirm the password" id="confirm_password" name="confirm_password" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" placeholder="Enter the age" id="age" name="age" min="4" max="18" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    </div>
+</body>
+</html>
