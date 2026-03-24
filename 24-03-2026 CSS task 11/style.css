@@ -1,0 +1,16 @@
+#external{
+            background-color: aquamarine;
+            height:25vh; width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+#h1{
+            color: darkgreen;
+        }
+#p1{
+            color: darkgoldenrod;
+        }

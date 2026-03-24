@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal{
+            background-color: lightcoral;
+            height:25vh; width: 90%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .h1{
+            color: blanchedalmond;
+        }
+        p1{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <section style="background-color: aqua; height:25vh; width: 90%; margin-bottom: 10px;padding: 10px;border: 2px solid black; border-radius: 5px; box-shadow: 3px 3px 5px;">
+        <div style="font-family: 'Courier New', Courier, monospace;color: blueviolet;">
+            <h1>It's a internal CSS</h1>
+            <p style="color:brown">Inline CSS is written directly inside an HTML tag using the style attribute. </p>
+        </div>
+    </section>
+    <section class="internal">
+        <h1 class="h1">It's a internal CSS</h1>
+        <p class="p1">Internal CSS is written inside a style tag in the head section of an HTML page.</p>
+    </section>
+    <section id="external">
+        <h1 id="h1">It's a internal CSS</h1>
+        <p id="p1">External CSS is written in a separate .css file and linked to HTML.</p>
+    </section>
+</body>
+</html>
