@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 80vw;
+            height: 15vh;
+            background-color: lightpink;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px;
+            margin:20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border:3px solid maroon;
+            flex-direction: column;
+        }
+        p{
+            color: maroon;
+        }
+        h2{
+            color: blueviolet;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        #font1{
+            font-family:'Courier New', Courier, monospace;
+            font-size: larger;
+            background: #EEAECA;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+        #style{
+            text-decoration: underline;
+        }
+        #bold1{
+            font-weight: bolder;
+        }
+        #dec{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>color and border</h2>
+            <p>Colors-Change text and border colors</p>
+        </div>
+    </section>
+    <section >
+        <div style="background-image: url(https://picsum.photos/200); ">
+            <h2 style="color:aquamarine">background colors and image</h2>
+            <p color>Backgrounds -Set background colors and images</p>
+        </div>
+    </section>
+    <section>
+        <div id="font1">
+            <h2>background colors and image</h2>
+            <p color>Fonts-Apply different font families and sizes</p>
+        </div>
+    </section>
+    <section>
+        <div style="background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);">
+            <h2>background colors and image</h2>
+            <p color>Text <span id="dec">Styles-Use</span><span id="bold1">bold,</span> italic, <span id="style">underline</span>, etc.</p>
+        </div>
+    </section>
+</body>
+</html>
