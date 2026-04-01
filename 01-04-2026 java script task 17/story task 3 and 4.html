@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="boat">
+        <ul id="crew">
+            <li><button disabled>jack sparrow</button></li>
+            <li>Alice</li>
+            <li>Bob</li>
+            <li>Richard</li>
+        </ul>
+        <button onclick="direction('jack')">asking jack</button>
+        <button onclick="direction('alice')">asking alice</button>
+        <div><h2>route is <span id="output"></span></h2></div>
+    </div>
+    <script>
+        function direction(name){
+            if(name==="jack"){
+                let say=name+' directing to north';
+                document.getElementById('output').innerText=say;
+            }
+            else{
+                let say=name+' directing to south';
+                document.getElementById('output').innerText=say;
+            }
+        }
+    </script>
+</body>
+</html>
