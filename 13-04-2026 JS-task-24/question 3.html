@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        }
+        h1{
+            text-align: center;
+            color: pink;
+        }
+        button{
+            width:30%;
+            height: 5%;
+            color: aquamarine;
+            background-color: blueviolet;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use event listener</h1>
+    <button onclick="click1()">click me</button>
+    <script>
+        function click1(){
+            alert("button click event");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        height: 30%;
+        width: 50%;
+        align-items: center;
+        flex-direction: column;
+        background-color: lightgoldenrodyellow;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px;
+    }
+    input{
+        background-color: peachpuff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h1>when you type input it refelect below</h1>
+        <input type="text" id="input1">
+        <h2 id="output"></h2>
+    </div>
+    <script>
+        let input=document.getElementById('input1');
+        let output=document.getElementById('output');
+        output.style.color="blueviolet"
+        input.addEventListener('input',()=>{
+            output.textContent=input.value;
+        })
+    </script>
+</body>
+</html>
