@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin-top: 0px;
+        }
+        #ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+        p{
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+        li{
+            background-color: blueviolet;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        li:hover{
+            transition-duration: 0.2s;
+            transform: scale(1.1)translateX(5px);
+        }
+        header{
+            background-color: antiquewhite;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CINEMA BOOK</h1>
+    </header>
+    <ul id="ul">
+    </ul>
+    <script>
+        let movielist=['jan nayagam','lik','dude','vada chennai','conjuring','kara','beast','jho'];
+        let ul=document.getElementById('ul');
+        console.log(ul)
+        movielist.map(value=>{
+            console.log(value);
+            let li=document.createElement('li');
+            let img=document.createElement('img');
+            let div=document.createElement('div');
+            let p=document.createElement('p');
+            p.textContent=value;
+            img.src="https://picsum.photos/200";
+            li.appendChild(div);
+            div.appendChild(img);
+            li.appendChild(p);
+            ul.appendChild(li);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>redmi</li>
+        <li>poco</li>
+        <li>realme</li>
+        <li>vivo</li>
+    </ul>
+    <input type="text" oninput="filter()" placeholder="search">
+    <script>
+        function check(a,b){
+            for(let i=0;i<a.length;i++){
+                let str=''
+                str+=b[i];
+                let str1=''
+                str+=a[i];
+                console.log(str);
+                if(a[i]===b){
+                    return true;
+                }
+                else if(a===b){
+                    return true;
+                }
+                else if(str1===str){
+                    return true;
+                }
+            }
+            return false
+        }
+        function filter(){
+            let ul=document.getElementById('ul');
+            let li=ul.querySelectorAll('li');
+            let input=document.querySelector('input').value;
+            input=input.toLowerCase();
+            for(let i=0;i<li.length;i++){
+                let element=li[i];
+                let val=element.textContent.toLowerCase();
+                if(check(val,input)){
+                    element.hidden=false;
+                }
+                else{
+                    element.hidden=true;
+                }                
+            };
+
+        }
+    </script>
+</body>
+</html>
