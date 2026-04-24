@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: black;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+        h2{
+            text-align: right;
+            padding-right: 20px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+        }
+        button{
+            border-radius: 8px;
+            padding: 5px;
+            background-color: aqua;
+            color: black;
+        }
+        div{
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        p{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>SHOPPING CART</h1>
+    <h2>CART (<span id="cartno">0</span>)</h2>
+    <ul id="cart">
+        <li>Good day
+            <button onclick="additeam()">Add to cart</button>
+        </li>
+        <li>Happy Happy
+            <button onclick="additeam()">Add to cart</button>
+        </li>
+        <li>Marry Gold
+            <button onclick="additeam()">Add to cart</button>
+        </li>
+        <li>Tiger
+            <button onclick="additeam()">Add to cart</button>
+        </li>
+        <li>
+            <button onclick="clear1()">clear all</button>
+        </li>
+
+    </ul>
+    <div><p>copyright @ INDEW 2026</p></div>
+    <script>
+        let ul=document.getElementById('cart');
+        let value=document.getElementById('cartno');
+        let cart= value.textContent;
+        cart=Number(cart);
+        function additeam(){
+            cart++;
+            value.textContent=cart;
+        }
+        function clear1(){
+            cart=0;
+            value.textContent=cart;
+        }
+    </script>
+</body>
+</html>
