@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>localStorage</h1>
+    <button onclick="localadd()">add into localStorage</button>
+    <button onclick="localremove()">remove into localStorage</button>
+    <h1>sessionStorage</h1>
+    <button onclick="sessionadd()">add into sessionStorage</button>
+    <button onclick="sessionremove()">remove into sessionStorage</button>
+    <script>
+        function localadd(){
+            localStorage.setItem("username","venkat");
+        }
+        function localremove(){
+            localStorage.removeItem("username");
+        }
+        function sessionadd(){
+            sessionStorage.setItem("username","venkat");
+        }
+        function sessionremove(){
+            sessionStorage.removeItem("username");
+        }
+    </script>
+</body>
+</html>
